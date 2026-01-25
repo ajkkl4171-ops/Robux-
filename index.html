@@ -162,6 +162,7 @@ button{
   font-size:22px;
   font-weight:900;
   margin-top:8px;
+  word-break: break-all;
 }
 .notice{
   margin-top:18px;
@@ -187,15 +188,13 @@ button{
 
 <div class="app">
 
-  <!-- SIDEBAR -->
   <aside class="sidebar">
     <h1>🅡 Robux Panel</h1>
     <div class="info">Estado: <span>Verificado</span></div>
-    <div class="info">Pago: <span>Transferencia MX</span></div>
+    <div class="info">Pago: <span>Transferencia / LTC</span></div>
     <div class="info">Entrega: <span>Manual</span></div>
   </aside>
 
-  <!-- MAIN -->
   <main class="main">
     <h2>Compra Robux</h2>
     <div class="subtitle">Selecciona un paquete para continuar</div>
@@ -256,23 +255,23 @@ button{
       </div>
     </div>
 
-    <!-- PAYMENT -->
     <div id="payment" class="payment">
-      <h3>Pago por Transferencia MX</h3>
+      <h3>Métodos de Pago</h3>
 
       <div class="pay-box">
+        <strong>Transferencia MX</strong><br>
         <strong>Titular:</strong> Graciela<br>
         <strong>Banco:</strong> Nvio<br>
         <strong>Cuenta:</strong>
         <div class="account">710969000152932282</div>
       </div>
  
-      <div id="payment" class="payment">
-      <h3>LTC WALLET </h3>
-        <div class="account">LYvGX2yeh6D3kSS3npwnrzwdhUDKco5Rka</div>
+      <div class="pay-box" style="margin-top:20px;">
+        <strong>LTC WALLET (Litecoin)</strong><br>
+        <div class="account" style="font-size:18px;">LYvGX2yeh6D3kSS3npwnrzwdhUDKco5Rka</div>
       </div>
     
-    <div class="notice">
+      <div class="notice">
         Envía el comprobante a <strong>ajkkl4171@gmail.com</strong><br><br>
         ⏳ Espera de <strong>10 a 15 minutos</strong> mientras se verifica el pago.<br>
         Los Robux se entregarán al Gmail registrado.
@@ -286,7 +285,6 @@ button{
 
 </div>
 
-<!-- MODAL -->
 <div id="overlay" class="overlay">
   <div class="modal">
     <h3>Ingresa tu Gmail</h3>
@@ -308,11 +306,9 @@ function confirm(){
   }
   document.getElementById("overlay").style.display="none";
   document.getElementById("payment").style.display="block";
-  window.scrollTo({top:document.body.scrollHeight,behavior:"smooth"});
+  window.scrollTo({top: document.body.scrollHeight, behavior: "smooth"});
 }
 </script>
 
 </body>
 </html>
-
-
